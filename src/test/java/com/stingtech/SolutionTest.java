@@ -19,5 +19,6 @@ class SolutionTest {
         int[] nums = new int[]{3,2,4};
         int[] expected = new int[]{1,2};
         int[] actual = solution.twoSum(nums, 6);
+        assertArrayEquals(expected, actual);
     }
 }
