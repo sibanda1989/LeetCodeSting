@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionTest {
-    Solution solution = new Solution();
+    PalindromeSolution solution = new PalindromeSolution();
     boolean actual;
 
     @Test

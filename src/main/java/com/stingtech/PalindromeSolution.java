@@ -3,7 +3,7 @@ package com.stingtech;
 /**
  *Given an integer x, return true if x is a palindrome, and false otherwise.
  */
-public class Solution {
+public class PalindromeSolution {
     public boolean isPalindrome(int x) {
         //first convert x to a String
         String x_string = String.valueOf(x);
