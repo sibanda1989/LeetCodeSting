@@ -37,4 +37,10 @@ class SolutionTest {
         actual = solution.isPalindrome(-121);
         assertFalse(actual);
     }
+
+    @Test
+    void testPalindromeZero(){
+        actual = solution.isPalindrome(0);
+        assertTrue(actual);
+    }
 }
