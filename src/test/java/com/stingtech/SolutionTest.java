@@ -6,19 +6,35 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionTest {
     Solution solution = new Solution();
+    boolean actual;
+
     @Test
-    void twoSum() {
-        int[] nums = new int[]{2,7,11,15};
-        int[] expected = new int[]{0,1};
-        int[] actual = solution.twoSum(nums, 9);
-        assertArrayEquals(expected, actual);
+    void testPalindrome1(){
+        actual = solution.isPalindrome(121);
+        assertTrue(actual);
     }
 
     @Test
-    void twoSum1(){
-        int[] nums = new int[]{3,2,4};
-        int[] expected = new int[]{1,2};
-        int[] actual = solution.twoSum(nums, 6);
-        assertArrayEquals(expected, actual);
+    void testPalindromeEvenInput(){
+        actual = solution.isPalindrome(1001);
+        assertTrue(actual);
+    }
+
+    @Test
+    void testPalindromeFalseOdd(){
+        actual = solution.isPalindrome(231);
+        assertFalse(actual);
+    }
+
+    @Test
+    void testPalindromeFalseEven(){
+        actual = solution.isPalindrome(23156132);
+        assertFalse(actual);
+    }
+
+    @Test
+    void testPalindromeNegative(){
+        actual = solution.isPalindrome(-121);
+        assertFalse(actual);
     }
 }
