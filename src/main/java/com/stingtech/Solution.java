@@ -20,6 +20,7 @@ public class Solution {
         }
         return twoNums;
     }
+
     public boolean isPalindrome(int x) {
         //first convert x to a String
         String x_string = String.valueOf(x);
