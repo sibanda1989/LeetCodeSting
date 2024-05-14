@@ -21,4 +21,39 @@ class SolutionTest {
         int[] actual = solution.twoSum(nums, 6);
         assertArrayEquals(expected, actual);
     }
+    @Test
+    void testPalindrome1(){
+        boolean actual = solution.isPalindrome(121);
+        assertTrue(actual);
+    }
+
+    @Test
+    void testPalindromeEvenInput(){
+        boolean actual = solution.isPalindrome(1001);
+        assertTrue(actual);
+    }
+
+    @Test
+    void testPalindromeFalseOdd(){
+        boolean actual = solution.isPalindrome(231);
+        assertFalse(actual);
+    }
+
+    @Test
+    void testPalindromeFalseEven(){
+        boolean actual = solution.isPalindrome(23156132);
+        assertFalse(actual);
+    }
+
+    @Test
+    void testPalindromeNegative(){
+        boolean actual = solution.isPalindrome(-121);
+        assertFalse(actual);
+    }
+
+    @Test
+    void testPalindromeZero(){
+        boolean actual = solution.isPalindrome(0);
+        assertTrue(actual);
+    }
 }
